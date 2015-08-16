@@ -16,8 +16,8 @@ import org.springframework.beans.factory.config.Scope;
  */
 public class MapBackedScope implements Scope, DisposableBean {
 
-	protected final Map<Object, Object> beans;
-	protected final Map<Object, Runnable> destructionCallbacks = new ConcurrentHashMap<>();
+	private final Map<Object, Object> beans;
+	private final Map<Object, Runnable> destructionCallbacks = new ConcurrentHashMap<>();
 
 	public MapBackedScope(Map<Object, Object> beans) {
 		super();

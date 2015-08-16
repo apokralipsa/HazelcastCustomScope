@@ -14,7 +14,7 @@ import com.hazelcast.core.IMap;
  */
 public class HazelcastClusterScope extends MapBackedScope {
 
-	public static final Logger LOG = LoggerFactory.getLogger(HazelcastClusterScope.class);
+	private static final Logger LOG = LoggerFactory.getLogger(HazelcastClusterScope.class);
 	public static final String NAME = "HazelcastClusterScope";
 
 	public HazelcastClusterScope(HazelcastInstance hazelcastInstance) {
